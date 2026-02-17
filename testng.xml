@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="methods" thread-count="4">
+    <test verbose="2" preserve-order="true" name="/Users/takev/Documents/GitHub/MavenTestNgDemo">
+        <classes>
+            <class name="org.dani.CalculatorDataTest">
+                <methods>
+                    <include name="testAddMultipleValues"/>
+                </methods>
+            </class>
+            <class name="org.dani.LoginTests">
+                <methods>
+                    <include name="verifyLogin"/>
+                </methods>
+            </class>
+            <class name="org.dani.ParallelDemo">
+                <methods>
+                    <include name="testMethod1"/>
+                    <include name="testMethod2"/>
+                    <include name="testDataProviderParallel"/>
+                </methods>
+            </class>
+            <class name="org.dani.SimpleDataTest">
+                <methods>
+                    <include name="testNames"/>
+                </methods>
+            </class>
+            <class name="org.dani.TestNgDemo">
+                <methods>
+                    <include name="validateAddition"/>
+                    <include name="validateResetFunction"/>
+                    <include name="validateWelcomeMessage"/>
+                    <include name="validateInventoryStatus"/>
+                    <include name="validateCartSize"/>
+                    <include name="validateEmailFormat"/>
+                    <include name="validateUserProfile"/>
+                    <include name="validateFormErrors"/>
+                </methods>
+            </class>
+            <class name="org.dani.UserLoginTest">
+                <methods>
+                    <include name="testValidLogin"/>
+                    <include name="testInvalidLogin"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Smoke Execution">
+        <groups>
+            <run>
+                <include name="smoke" />
+                <exclude name="regression" />
+            </run>
+        </groups>
+        <classes>
+            <class name="org.dani.TestNgDemo" />
+        </classes>
+    </test>
+</suite>
