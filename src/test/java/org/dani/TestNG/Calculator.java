@@ -1,4 +1,4 @@
-package org.dani;
+package org.dani.TestNG;
 
 /**
  * A simple Calculator class for Unit Testing demonstrations.

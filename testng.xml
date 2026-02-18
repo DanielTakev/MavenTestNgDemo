@@ -3,29 +3,34 @@
 <suite name="All Test Suite" parallel="methods" thread-count="4">
     <test verbose="2" preserve-order="true" name="/Users/takev/Documents/GitHub/MavenTestNgDemo">
         <classes>
-            <class name="org.dani.CalculatorDataTest">
+            <class name="org.dani.SeleniumDemo.Selenium">
+                <methods>
+                    <include name="myFirstTest"/>
+                </methods>
+            </class>
+            <class name="org.dani.TestNG.CalculatorDataTest">
                 <methods>
                     <include name="testAddMultipleValues"/>
                 </methods>
             </class>
-            <class name="org.dani.LoginTests">
+            <class name="org.dani.TestNG.LoginTests">
                 <methods>
                     <include name="verifyLogin"/>
                 </methods>
             </class>
-            <class name="org.dani.ParallelDemo">
+            <class name="org.dani.TestNG.ParallelDemo">
                 <methods>
                     <include name="testMethod1"/>
                     <include name="testMethod2"/>
                     <include name="testDataProviderParallel"/>
                 </methods>
             </class>
-            <class name="org.dani.SimpleDataTest">
+            <class name="org.dani.TestNG.SimpleDataTest">
                 <methods>
                     <include name="testNames"/>
                 </methods>
             </class>
-            <class name="org.dani.TestNgDemo">
+            <class name="org.dani.TestNG.TestNgDemo">
                 <methods>
                     <include name="validateAddition"/>
                     <include name="validateResetFunction"/>
@@ -37,24 +42,12 @@
                     <include name="validateFormErrors"/>
                 </methods>
             </class>
-            <class name="org.dani.UserLoginTest">
+            <class name="org.dani.TestNG.UserLoginTest">
                 <methods>
                     <include name="testValidLogin"/>
                     <include name="testInvalidLogin"/>
                 </methods>
             </class>
-        </classes>
-    </test>
-
-    <test name="Smoke Execution">
-        <groups>
-            <run>
-                <include name="smoke" />
-                <exclude name="regression" />
-            </run>
-        </groups>
-        <classes>
-            <class name="org.dani.TestNgDemo" />
         </classes>
     </test>
 </suite>

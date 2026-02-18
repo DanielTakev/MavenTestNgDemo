@@ -1,4 +1,4 @@
-package org.dani;
+package org.dani.TestNG;
 
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;

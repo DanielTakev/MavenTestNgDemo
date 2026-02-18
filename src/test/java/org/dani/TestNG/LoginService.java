@@ -1,4 +1,4 @@
-package org.dani;
+package org.dani.TestNG;
 
 /**
  * A simple Service to demonstrate Data-Driven Testing logic.
