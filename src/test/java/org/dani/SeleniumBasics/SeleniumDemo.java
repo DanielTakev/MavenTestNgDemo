@@ -1,4 +1,4 @@
-package org.dani.SeleniumDemo;
+package org.dani.SeleniumBasics;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

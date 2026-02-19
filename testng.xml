@@ -3,7 +3,7 @@
 <suite name="All Test Suite" parallel="methods" thread-count="4">
     <test verbose="2" preserve-order="true" name="/Users/takev/Documents/GitHub/MavenTestNgDemo">
         <classes>
-            <class name="org.dani.SeleniumDemo.Selenium">
+            <class name="org.dani.SeleniumBasics.Selenium">
                 <methods>
                     <include name="myFirstTest"/>
                 </methods>
