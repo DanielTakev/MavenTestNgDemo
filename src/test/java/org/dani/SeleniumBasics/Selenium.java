@@ -23,7 +23,7 @@ public class Selenium {
         WebElement usernameFieldElement = driver.findElement(usernameField);
         usernameFieldElement.sendKeys("daniel11");
 
-//        Thread.sleep(1333);
+        Thread.sleep(3333);
         System.out.println("The text text is: " + usernameFieldElement.getText());
         System.out.println("The value attribute is: " + usernameFieldElement.getAttribute("value"));
         System.out.println("The placeholder attribute is: " + usernameFieldElement.getAttribute("placeholder"));
