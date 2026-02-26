@@ -1,0 +1,17 @@
+Project-Root/
+├── pom.xml
+├── src/
+│   ├── main/java/
+│   │   └── org.dani/
+│   │       ├── pages/             <-- Page Objects (Login, Home, etc.)
+│   │       ├── base/              <-- BasePage (Wait wrappers, Factory init)
+│   │       ├── utils/             <-- ConfigReader, ExcelReader, Loggers
+│   │       └── components/        <-- Headers, Footers, Sidebars (Reused bits)
+│   └── test/java/
+│       └── org.dani/
+│           ├── tests/             <-- Test classes (LoginTests, etc.)
+│           ├── base/              <-- BaseTest (Driver Setup/TearDown)
+│           └── data/              <-- DataProviders
+│   └── test/resources/
+│       ├── testng.xml             <-- Test suites
+│       └── config.properties      <-- Environment URLs, Browsers

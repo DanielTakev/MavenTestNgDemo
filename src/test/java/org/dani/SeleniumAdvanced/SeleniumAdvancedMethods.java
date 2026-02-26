@@ -141,9 +141,6 @@ public class SeleniumAdvancedMethods {
         Assert.assertTrue(isCheckboxByTextSelected("Option 2"));
     }
 
-
-
-
     @Test
     public void mouseHoverTest() throws InterruptedException {
         driver.get("https://webdriveruniversity.com/Actions/index.html");
@@ -211,7 +208,7 @@ public class SeleniumAdvancedMethods {
         // Validate we are back
         Assert.assertEquals(driver.getTitle(), "The Internet");
     }
-    
+
     @Test
     public void scrollToElementTest() throws InterruptedException {
         driver.get("https://webdriveruniversity.com/Data-Table/index.html");
